@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+
+  <!-- CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+<!-- Title -->
+<h1>Todo App – Interactive Task Management</h1>
+
+<!-- Description -->
+<p>
+Built a dynamic task management interface using vanilla JavaScript.
+Features include:
+</p>
+
+<ul>
+  <li>Add, edit, delete, and mark tasks as complete</li>
+  <li>Filter tasks by All, Active, and Completed</li>
+  <li>Persistent storage using localStorage</li>
+  <li>Responsive and user-friendly UI with subtle animations (fade-in/out empty state)</li>
+  <li>Clean code with state management and DOM manipulation</li>
+  <li>Focused on JavaScript fundamentals, user experience, and real-world UI logic</li>
+</ul>
+
+<!-- Optional visible tags for portfolio -->
+<p><strong>Tags:</strong> javascript, todo, vanilla-js, frontend, dom, localstorage</p>
+
+<hr>
+
+
+  <h1>Todo App</h1>
+
+  <input type="text" id="taskInput" placeholder="Enter task">
+  <button onclick="addTask()">Add</button>
+
+  <div class="filters">
+    <button onclick="setFilter('all')">All</button>
+    <button onclick="setFilter('active')">Active</button>
+    <button onclick="setFilter('completed')">Completed</button>
+  </div>
+  
+  <p id="emptyMessage">No tasks yet. Add one ??</p>
+  
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
